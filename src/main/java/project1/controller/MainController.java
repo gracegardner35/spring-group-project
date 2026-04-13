@@ -1,7 +1,6 @@
-package com.group4.project1.controller;
+package project1.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -21,4 +20,15 @@ public class MainController {
     public String gracePage() {
         return "grace";
     }
+
+    @GetMapping("/aaron")
+    public String aaronPage() {
+        return "aaron";
+    }
+
+    @GetMapping("/praneeth")
+    public String praneethPage() {
+        return "praneeth";
+    }
+
 }
