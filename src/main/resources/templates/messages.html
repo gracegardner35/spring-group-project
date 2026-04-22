@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Message Board</title>
+</head>
+<body>
+
+<h1>Message Board</h1>
+
+<form action="/messages" method="post">
+    <input type="text" name="author" placeholder="Your name" required>
+    <br><br>
+    <textarea name="content" placeholder="Write a message..." required></textarea>
+    <br><br>
+    <button type="submit">Post Message</button>
+</form>
+
+<hr>
+
+<h2>Messages</h2>
+
+<ul>
+    <li th:each="msg : ${messages}">
+        <strong th:text="${msg.author}"></strong>:
+        <span th:text="${msg.content}"></span>
+    </li>
+</ul>
+
+</body>
+</html>
