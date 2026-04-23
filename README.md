@@ -17,4 +17,5 @@ This is a Spring Web MVC application using Thymeleaf and H2 database.
 ## Features
 - Home page
 - About page
-- Individual member pages
+- Individual Group Member Pages
+- Additional Added Members Column
