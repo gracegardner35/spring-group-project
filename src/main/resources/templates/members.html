@@ -1,0 +1,10 @@
+<h1>Members</h1>
+
+<ul>
+    <li th:each="m : ${members}">
+        <span th:text="${m.name}"></span> -
+        <span th:text="${m.bio}"></span>
+    </li>
+</ul>
+
+<a href="/add-member">Add Member</a>
