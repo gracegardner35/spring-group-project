@@ -4,6 +4,7 @@
     <li th:each="m : ${members}">
         <span th:text="${m.name}"></span> -
         <span th:text="${m.bio}"></span>
+        <a th:href="@{/edit-member/{id}(id=${m.id})}">Edit</a>
     </li>
 </ul>
 
