@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:replace="${title}">Page</title>
+
+    <!-- Global CSS for all pages -->
+    <link rel="stylesheet" href="/custom.css">
+</head>
+
+<body>
+<!-- This is where each page's content will appear -->
+<div th:replace="${content}"></div>
+</body>
+</html>
