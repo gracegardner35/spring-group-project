@@ -1,7 +1,7 @@
 # Group 4 Project 1
 
 ## Description
-This is a Spring Web MVC application built using Thymeleaf, Spring Data JPA, and an H2 database. The application allows users to view group member pages, add new members, edit existing members, and navigate through a styled user interface.
+This is a Spring Web MVC application built using Thymeleaf, Spring Data JPA, and an H2 database. The application allows users to view group member pages, add new members, edit existing members, delete added members, and navigate through a professionally styled user interface.
 
 ## Technologies
 - Spring Boot
@@ -23,7 +23,12 @@ This is a Spring Web MVC application built using Thymeleaf, Spring Data JPA, and
 - Add new members
 - View all members
 - Edit existing members
+- Delete added members
+- Delete confirmation popup
+- Protected group members from deletion
 - Navigation links between pages
 - Styled user interface with custom CSS
+- Gradient background and card-style layout
+- Improved form styling and navigation buttons
 - Message board
 - Add images
