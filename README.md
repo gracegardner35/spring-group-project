@@ -1,13 +1,15 @@
 # Group 4 Project 1
 
 ## Description
-This is a Spring Web MVC application using Thymeleaf and H2 database.
+This is a Spring Web MVC application built using Thymeleaf, Spring Data JPA, and an H2 database. The application allows users to view group member pages, add new members, edit existing members, and navigate through a styled user interface.
 
 ## Technologies
 - Spring Boot
+- Spring Web MVC
 - Thymeleaf
 - H2 Database
 - Spring Data JPA
+- HTML/CSS
 
 ## Contributors
 - Grace Gardner
@@ -17,8 +19,11 @@ This is a Spring Web MVC application using Thymeleaf and H2 database.
 ## Features
 - Home page
 - About page
-- Individual Group Member Pages
-- Additional Added Members Column
-- Option to Edit Added Members
-- Message Board
-- Add Images
+- Individual group member pages
+- Add new members
+- View all members
+- Edit existing members
+- Navigation links between pages
+- Styled user interface with custom CSS
+- Message board
+- Add images
