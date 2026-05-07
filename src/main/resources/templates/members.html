@@ -1,5 +1,9 @@
 <h1>Members</h1>
 
+<head>
+    <link rel="stylesheet" href="/custom.css">
+</head>
+
 <ul>
     <li th:each="m : ${members}">
         <span th:text="${m.name}"></span> -
@@ -9,3 +13,6 @@
 </ul>
 
 <a href="/add-member">Add Member</a>
+
+<br>
+<a href="/about">Back to About Page</a>
