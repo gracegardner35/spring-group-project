@@ -53,11 +53,6 @@ public class MainController {
         return "add-member";
     }
 
-    @PostMapping("/add-member")
-    public String addMember(Member member) {
-        memberRepo.save(member);
-        return "redirect:/members";
-    }
 
     @GetMapping("/edit-member/{id}")
     public String showEditForm(@PathVariable Long id, Model model) {
@@ -74,6 +69,24 @@ public class MainController {
         member.setBio(updatedMember.getBio());
 
         memberRepo.save(member);
+
+        return "redirect:/members";
+    }
+
+    @PostMapping("/add-member")
+    public String addMember(Member member) {
+        member.setGroupMember(false);
+        memberRepo.save(member);
+        return "redirect:/members";
+    }
+
+    @GetMapping("/delete-member/{id}")
+    public String deleteMember(@PathVariable Long id) {
+        Member member = memberRepo.findById(id).orElseThrow();
+
+        if (!member.isGroupMember()) {
+            memberRepo.deleteById(id);
+        }
 
         return "redirect:/members";
     }

@@ -19,4 +19,14 @@ public class Member {
 
     public String getBio() { return bio; }
     public void setBio(String bio) { this.bio = bio; }
+
+    private boolean groupMember;
+
+    public boolean isGroupMember() {
+        return groupMember;
+    }
+
+    public void setGroupMember(boolean groupMember) {
+        this.groupMember = groupMember;
+    }
 }

@@ -10,51 +10,62 @@ body {
 }
 
 body {
-    background-color: #f4f6f8;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef2f7, #dfe7f3);
+    font-family: Georgia, "Times New Roman", serif;
+    color: #2f3a4a;
     text-align: center;
-    margin-top: 50px;
-    color: #333;
+    margin: 0;
+    padding: 40px;
 }
 
 h1 {
-    color: #2c3e50;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #2f3a4a;
 }
 
-form {
+h2 {
+    color: #2f3a4a;
+    margin-top: 30px;
+}
+
+.card,
+form,
+.member-section,
+.team-section {
     background-color: white;
-    padding: 30px;
-    margin: auto;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 600px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
 }
 
-input {
-    width: 90%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.member-list {
+    list-style-position: inside;
+    padding: 0;
+    margin: 20px auto;
+    width: fit-content;
+    text-align: left;
 }
 
-button {
-    background-color: #5c7cfa;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 5px;
-    cursor: pointer;
+.member-item {
+    font-size: 22px;
+    margin: 15px 0;
 }
 
-button:hover {
-    background-color: #4c6ef5;
+.actions {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.actions a {
+    margin: 0 8px;
 }
 
 a {
-    color: #364fc7;
+    color: #3347b7;
     text-decoration: none;
     font-weight: bold;
 }
@@ -63,7 +74,60 @@ a:hover {
     text-decoration: underline;
 }
 
+.nav-links {
+    margin-top: 25px;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: white;
+    color: #3347b7;
+    padding: 10px 18px;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #eef2ff;
+    text-decoration: none;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0 18px 0;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3347b7;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #263999;
+}
+
 ul {
-    list-style-position: inside;
-    padding: 0;
+    padding-left: 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
