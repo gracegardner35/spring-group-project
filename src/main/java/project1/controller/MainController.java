@@ -7,6 +7,8 @@ import project1.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+
 
 @Controller
 public class MainController {
@@ -54,6 +56,25 @@ public class MainController {
     @PostMapping("/add-member")
     public String addMember(Member member) {
         memberRepo.save(member);
+        return "redirect:/members";
+    }
+
+    @GetMapping("/edit-member/{id}")
+    public String showEditForm(@PathVariable Long id, Model model) {
+        Member member = memberRepo.findById(id).orElseThrow();
+        model.addAttribute("member", member);
+        return "edit-member";
+    }
+
+    @PostMapping("/edit-member/{id}")
+    public String updateMember(@PathVariable Long id, Member updatedMember) {
+        Member member = memberRepo.findById(id).orElseThrow();
+
+        member.setName(updatedMember.getName());
+        member.setBio(updatedMember.getBio());
+
+        memberRepo.save(member);
+
         return "redirect:/members";
     }
 }

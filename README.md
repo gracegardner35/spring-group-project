@@ -19,3 +19,6 @@ This is a Spring Web MVC application using Thymeleaf and H2 database.
 - About page
 - Individual Group Member Pages
 - Additional Added Members Column
+- Option to Edit Added Members
+- Message Board
+- Add Images
